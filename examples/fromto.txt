@@ -1,0 +1,16 @@
+FROM i <- 1 TO 10 DO
+    PRINT (i)
+    var : integer
+END_FROM
+
+/* Should warn that i is not defined */
+PRINT (i)
+print (var)
+x : integer
+
+FROM x <- 1 TO 10 DO
+    PRINT (x)
+END_FROM
+
+/* Should be ok */
+PRINT (x)

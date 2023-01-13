@@ -1,0 +1,4 @@
+procedure bar(xf2:string)
+start
+    print ("Just a procedure, move on")
+end_procedure

@@ -1,0 +1,37 @@
+integer function foo(xf1:integer)
+start
+    if (xf1 > 10) then
+        print("test")
+        /* It needs to have this spacing in the '-' */
+        return foo(xf1 - 1)
+    else
+        print("cono")
+        return 0
+    end_if
+    return 0
+end_function
+
+procedure bar(xf2:string)
+start
+    xf2 <- "hello"
+    print (xf2)
+end_procedure
+
+INTEGER FUNCTION fibonacciI(n:INTEGER)
+START
+    current: INTEGER
+    next: INTEGER
+    current <- 0
+    next <- 1
+    
+    FROM i <- 0 TO n DO
+        temp: INTEGER
+        temp <- current + next
+        current <- next
+        next <- temp
+    END_FROM
+  
+    RETURN current
+END_FUNCTION
+
+PRINT(10)

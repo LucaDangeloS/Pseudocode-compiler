@@ -1,0 +1,13 @@
+PRINT ("test string")
+PRINT (9)
+PRINT (9.0)
+PRINT (TRUE)
+PRINT (FALSE, 1, 2, 3, 4)
+symbol : integer
+READ (symbol)
+another_symbol : STRING
+another_symbol <- "test string"
+READ (another_symbol)
+SYM2 : STRING
+READ (SYM2)
+PRINT (symbol, another_symbol, SYM2)

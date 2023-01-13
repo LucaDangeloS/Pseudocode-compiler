@@ -1,0 +1,21 @@
+IF (VAR1 = 10)
+    THEN PRINT ("VAR1 is 10")
+END_IF
+IF (VAR1 = 10)
+    THEN PRINT ("VAR1 is 10") 
+    ELSE PRINT ("VAR1 is not 10")
+END_IF
+
+bool_var : BOOL
+bool_var <- TRUE
+bool_var <- FALSE
+
+IF (bool_var AND NOT bool_var)
+THEN PRINT ("bool_var is TRUE")
+ELSE PRINT ("bool_var is FALSE")
+END_IF
+
+IF (bool_var AND (VAR3 = 4))
+THEN PRINT ("4 plus 4 = 8")
+ELSE PRINT ("4 = 4")
+END_IF

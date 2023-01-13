@@ -1,0 +1,12 @@
+VAR1 : integer
+VAR1 <- 0
+WHILE (VAR1 < 10) DO
+    VAR1 <- VAR1 + 1
+    PRINT (VAR1)
+END_WHILE
+
+DO
+    VAR1 <- VAR1 + 1
+    PRINT (VAR1)
+WHILE (VAR1 < 10)
+END_WHILE

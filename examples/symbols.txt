@@ -1,0 +1,27 @@
+x:integer
+y:integer
+z:integer
+
+str1 : string
+str2 : string
+
+x <- 1
+y <- 2
+z <- x + y
+z <- ((x + 1) * y) ^ z
+
+str1 <- "Hello"
+str2 <- "World"
+/* This is surely gonna crash... */
+z <- "again?"
+
+/* Test for auto declaration of variables */
+auto_var <- 1
+auto_var_2 <- "Hello World"
+auto_var_3 <- 3.1415
+auto_var_4 <- TRUE
+auto_var_5 <- 'c'
+auto_var_6 <- auto_var_2
+auto_var_7 <- auto_var
+auto_var_8 <- auto_var_3
+print (z)

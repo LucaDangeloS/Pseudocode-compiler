@@ -1,0 +1,11 @@
+v: INTEGER
+v <- 1
+
+CASE v:
+    1: v <- v + 1
+    v <- v + 1
+    PRINT(v)
+    2: v <- v * 2
+    DEFAULT: v <- 5
+END_CASE
+PRINT(v)

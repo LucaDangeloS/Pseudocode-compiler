@@ -1,0 +1,6 @@
+VAR1 : INTEGER/* this is a comment */
+VAR1 <- 1
+/* This is a comment */
+/* They usually were multiline */
+/* But ended up leaving the idea */
+PRINT(VAR1)

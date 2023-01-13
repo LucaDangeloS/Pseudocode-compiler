@@ -1,0 +1,92 @@
+INTEGER FUNCTION fibonacciI(n:INTEGER)
+START
+    current: INTEGER
+    next: INTEGER
+    current <- 0
+    next <- 1
+
+    FROM i <- 0 TO n DO
+        temp: INTEGER
+        temp <- current + next
+        current <- next
+        next <- temp
+    END_FROM
+  
+    RETURN current
+END_FUNCTION
+
+INTEGER FUNCTION fibonacciR(n:INTEGER)
+START
+    IF (n = 0) THEN
+        RETURN 0
+    ELSE 
+        IF (n = 1) THEN
+            RETURN 1
+        ELSE
+            RETURN fibonacciR(n - 1) + fibonacciR(n - 2)
+        END_IF
+    END_IF
+    /* This will never be reached, theoretically. But it needs a return statement */
+    RETURN -1
+END_FUNCTION
+
+INTEGER FUNCTION add(x:INTEGER, y:INTEGER)
+START
+    RETURN x + y
+END_FUNCTION
+
+
+INTEGER FUNCTION modulus(x:INTEGER, y:INTEGER)
+START
+    RETURN x MOD y
+END_FUNCTION
+
+INTEGER FUNCTION multiply(x:INTEGER, y:INTEGER)
+START
+    RETURN x * y
+END_FUNCTION
+
+PROCEDURE get_numbers(num1:INTEGER, num2:INTEGER)
+START
+    PRINT("Enter first number:")
+    READ(num1)
+    num2 <- 7
+    PRINT("Enter second number:")
+    READ(num2)
+END_PROCEDURE
+
+num1: INTEGER
+num2: INTEGER
+selection: CHAR
+
+WHILE (selection <> 'e') DO
+    PRINT("Menu:")
+    PRINT("a. Add two numbers")
+    PRINT("m. Get the modulus of two numbers")
+    PRINT("r. Get the sum of the first n fibonacci numbers recursively")
+    PRINT("i. Get the sum of the first n fibonacci numbers iteratively")
+
+    PRINT("e. Exit")
+    READ(selection)
+
+    CASE selection:
+        'a':
+            get_numbers(num1, num2)
+            PRINT("Result: ", add(num1, num2))
+        'm':
+            get_numbers(num1, num2)
+            PRINT("Result: ", multiply(num1, num2))
+        'i':
+            PRINT("Enter a number:")
+            READ(num1)
+            PRINT("The sum of the first ", num1," fibonacci numbers is ", fibonacciI(num1))
+        'r':
+            PRINT("Enter a number:")
+            READ(num1)
+            PRINT("The sum of the first ", num1," fibonacci numbers is ", fibonacciR(num1))
+        'e':
+            PRINT("Bye!")
+        DEFAULT:
+            PRINT("Invalid selection")
+    END_CASE
+END_WHILE
