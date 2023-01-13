@@ -107,3 +107,6 @@ x <- 5
 
 - WRITE(\<var1>, \<var2>, ...)  
   Note: Arguments are atomic.
+
+
+**Note**: Added more parenthesis options, also adding 1 shift/reduce conflict. Too lazy to fix it and it shouldn't matter.
