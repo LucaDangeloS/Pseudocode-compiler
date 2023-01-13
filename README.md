@@ -6,7 +6,7 @@ This is a pseudocode to C compiler. The pseudocode syntax is a more relaxed vers
 - Reserved words are case insensitive.
 - Explicit pointers were removed.
 
-There are also a set of rules, most are standard on most languages:
+There are also a set of rules, most are standard:
 
 - Variable names must begin witha letter, and can contain underscore, numbers and letters (like in C).
 - Functions and procedures must be defined all in bulk, before or after the 'main' segment.
