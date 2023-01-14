@@ -1,14 +1,14 @@
 This is a pseudocode to C compiler. The pseudocode syntax is a more relaxed version of pascal pseudocode, with the following modifications:  
 
 - No variable declaration section, essentially allowing for variable declarations anywhere.
-- No Registers and Arrays.
+- No Registers nor Arrays.
 - No Break and Continue statements.
 - Reserved words are case insensitive.
 - Explicit pointers were removed.
 
 There are also a set of rules, most are standard:
 
-- Variable names must begin witha letter, and can contain underscore, numbers and letters (like in C).
+- Variable names must begin with a letter, and can contain underscores, numbers and letters (like in C).
 - Functions and procedures must be defined all in bulk, before or after the 'main' segment.
 - Function parameters are only passed by value, while in procedures are passed by reference.
 - Functions/procedures are only visible within the scope of the main segment and other functions/procedures declared below them.
