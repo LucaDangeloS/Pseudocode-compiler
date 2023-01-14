@@ -75,8 +75,9 @@ x <- 5
     \<expr>  
   END_FROM  
 
-- DO (<simple_expr>)   
-    WHILE (<simple_expr>)  
+- DO  
+  \<expr>     
+  WHILE (<simple_expr>)  
   END_WHILE
 
 - CASE \<var> OF  
