@@ -63,8 +63,8 @@ x <- 5
 ### Control structures:
 
 - IF (<simple_expr>) THEN  
-    [ELSE  
-    \<expr>]  
+    \<expr>  
+    [ELSE \<expr>]  
   END_IF
 
 - WHILE (<simple_expr>) DO  
